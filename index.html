@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cristina | Shelly</title>
+  <style>
+    :root {
+      --red: #d92942;
+      --cream: #fffdfb;
+      --ink: #30282a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(100% - 36px, 440px);
+      margin: 0 auto;
+      padding: 65px 0 45px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 110px;
+      margin: 0 auto 12px;
+    }
+
+    .brand {
+      color: var(--red);
+      font-size: 33px;
+      font-weight: 850;
+      letter-spacing: -1.5px;
+      margin: 0;
+    }
+
+    .tagline {
+      color: #8d7d80;
+      font-size: 13px;
+      margin: 6px 0 55px;
+    }
+
+    h1 {
+      font-size: 32px;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+
+    .intro {
+      color: #817478;
+      margin-bottom: 32px;
+    }
+
+    .links {
+      display: grid;
+      gap: 14px;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 22px;
+      border: 2px solid var(--red);
+      border-radius: 18px;
+      background: white;
+      color: var(--red);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 750;
+      transition: background .15s, color .15s;
+    }
+
+    .social:active {
+      background: var(--red);
+      color: white;
+    }
+
+    .arrow { font-size: 23px; }
+
+    footer {
+      margin-top: 75px;
+      color: #9c8b8f;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Sand dollar logo -->
+    <svg class="logo" viewBox="0 0 120 120"
+         role="img" aria-label="Shelly sand dollar logo">
+      <circle cx="60" cy="60" r="52"
+              fill="#fff" stroke="#d92942"
+              stroke-width="3"/>
+      <circle cx="60" cy="60" r="5" fill="#d92942"/>
+
+      <g fill="#d92942" opacity=".85">
+        <ellipse cx="60" cy="39" rx="6" ry="16"/>
+        <ellipse cx="60" cy="39" rx="6" ry="16"
+                 transform="rotate(72 60 60)"/>
+        <ellipse cx="60" cy="39" rx="6" ry="16"
+                 transform="rotate(144 60 60)"/>
+        <ellipse cx="60" cy="39" rx="6" ry="16"
+                 transform="rotate(216 60 60)"/>
+        <ellipse cx="60" cy="39" rx="6" ry="16"
+                 transform="rotate(288 60 60)"/>
+      </g>
+      <circle cx="60" cy="60" r="5" fill="#fff"/>
+    </svg>
+
+    <p class="brand">shelly</p>
+    <p class="tagline">a little tap, a new connection</p>
+
+    <h1>Cristina</h1>
+    <p class="intro">Let's stay connected ♡</p>
+
+    <nav class="links" aria-label="Social profiles">
+      <!-- Replace # with your actual profile URLs -->
+      <a class="social" href="#">
+        <span>Instagram</span><span class="arrow">↗</span>
+      </a>
+      <a class="social" href="#">
+        <span>Snapchat</span><span class="arrow">↗</span>
+      </a>
+      <a class="social" href="#">
+        <span>TikTok</span><span class="arrow">↗</span>
+      </a>
+      <a class="social" href="#">
+        <span>Facebook</span><span class="arrow">↗</span>
+      </a>
+    </nav>
+
+    <footer>Made with Shelly ♡</footer>
+  </main>
+</body>
+</html>
